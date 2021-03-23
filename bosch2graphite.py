@@ -30,8 +30,6 @@ graphyte.init(graphiteServer, prefix=graphitePrefix,
 async def main():
 
     async with aiohttp.ClientSession() as session:
-        data_file = open("data_file.txt", "r")
-        data = data_file.read().splitlines()
         BoschGateway = bosch.gateway_chooser(device_type=IVT)
         gateway = BoschGateway(
             session=session,

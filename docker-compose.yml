@@ -4,7 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      network: host
     container_name: home2graphite
     image: home2graphite
     stdin_open: true

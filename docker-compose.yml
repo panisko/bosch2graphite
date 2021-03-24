@@ -17,4 +17,4 @@ services:
       - MBLAN_PASSWORD=${MBLAN_PASSWORD}
       - MBLAN_IP=${MBLAN_IP}
       - MBLAN_SLEEP=${MBLAN_SLEEP}
-
+    restart: "unless-stopped"

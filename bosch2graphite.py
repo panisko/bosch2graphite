@@ -12,7 +12,7 @@ from bosch_thermostat_client.const.ivt import IVT
 from bosch_thermostat_client.const import HC, DHW, TYPE, RECORDINGS, HTTP
 
 logging.basicConfig()
-logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.DEBUG)
 
 graphitePrefix=os.environ.get("GRAPHITE_PREFIX")
 graphiteLogs=os.environ.get("LOG_GRAPHITE")
